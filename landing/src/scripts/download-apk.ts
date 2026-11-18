@@ -9,7 +9,7 @@ document.querySelectorAll<HTMLButtonElement>('[data-download-apk]').forEach((btn
     btn.disabled = true;
     btn.textContent = 'Fetching...';
     try {
-      const res = await fetch('https://api.github.com/repos/mliem2k/scientific-calculator/releases');
+      const res = await fetch('https://api.github.com/repos/mliemm/scientific-calculator/releases');
       const releases: Release[] = await res.json();
       const apk = releases.find((r) => r.prerelease)?.assets?.find((a) => a.name.endsWith('.apk'));
       if (!apk) throw new Error('APK not found');

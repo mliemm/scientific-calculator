@@ -61,7 +61,7 @@ import com.mliem.scientific_calculator.engine.AngleMode
 import com.mliem.scientific_calculator.engine.HistoryEntry
 import com.mliem.scientific_calculator.engine.spoken
 
-private const val REPO_URL = "https://github.com/mliem2k/scientific-calculator"
+private const val REPO_URL = "https://github.com/mliemm/scientific-calculator"
 
 @Composable
 fun ScreenShell(
@@ -221,7 +221,7 @@ fun SettingsScreen(
                 )
                 Divider()
                 Row(
-                    stringResource(R.string.source_code), "github.com/mliem2k/scientific-calculator",
+                    stringResource(R.string.source_code), "github.com/mliemm/scientific-calculator",
                     Modifier.clickable(role = Role.Button) { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(REPO_URL))) },
                 )
             }

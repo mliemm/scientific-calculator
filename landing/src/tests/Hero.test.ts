@@ -19,6 +19,6 @@ describe('Hero', () => {
     const container = await AstroContainer.create();
     const html = await container.renderToString(Hero);
     expect(html).toContain('Download APK');
-    expect(html).toContain('github.com/mliem2k/scientific-calculator');
+    expect(html).toContain('github.com/mliemm/scientific-calculator');
   });
 });
