@@ -12,7 +12,7 @@ describe('Footer', () => {
   it('renders GitHub link', async () => {
     const container = await AstroContainer.create();
     const html = await container.renderToString(Footer);
-    expect(html).toContain('github.com/mliem2k/scientific-calculator');
+    expect(html).toContain('github.com/mliemm/scientific-calculator');
   });
 
   it('renders MIT license text', async () => {

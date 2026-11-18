@@ -20,7 +20,7 @@ class CalculatorApp : Application() {
         UpdateClient(
             context = this,
             config = UpdateConfig(
-                repo = "mliem2k/scientific-calculator",
+                repo = "mliemm/scientific-calculator",
                 installReceiver = InstallResultReceiver::class.java,
                 channels = listOf(Channel.NIGHTLY),
                 updatesEnabled = BuildConfig.BUILD_NUMBER > 0,
