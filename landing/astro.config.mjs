@@ -1,15 +1,6 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
-import { fileURLToPath } from 'node:url';
+import { defineSite } from '@mliem2k/kit/astro/site';
 
-export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()],
-    resolve: {
-      alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url)),
-      },
-    },
-  },
+export default defineSite({
+  site: 'https://calculator.mliem.com',
 });
