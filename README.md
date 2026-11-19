@@ -15,7 +15,7 @@ cd android
 ## Release
 
 ```sh
-bun scripts/release.js   # build a signed nightly APK and publish a GitHub prerelease
+bun scripts/release.ts   # build a signed nightly APK and publish a GitHub prerelease
 ```
 
 The app checks these releases for updates; a local build has build number 0 and skips the check.

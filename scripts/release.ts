@@ -25,7 +25,7 @@ await $`cp ${apk} ${renamedApk}`;
 // the embedded build number format.
 const sameDayPrefix = `nightly-${dateStr}`;
 const listJson = await $`gh release list --json tagName`.text().catch(() => '[]');
-const allReleases = JSON.parse(listJson);
+const allReleases: { tagName: string }[] = JSON.parse(listJson);
 for (const { tagName: t } of allReleases) {
   if (t.startsWith(sameDayPrefix) && t !== tag) {
     console.log(`Removing stale same-day release ${t}...`);
