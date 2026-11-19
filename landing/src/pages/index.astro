@@ -1,4 +1,5 @@
 ---
+import Seo from '@mliemm/kit/astro/Seo.astro';
 import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
 import Features from '../components/Features.astro';
@@ -12,8 +13,12 @@ import appScreenshot from '../assets/screenshots/app-screenshot.png';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Scientific Calculator: natural textbook display for Android. Free and open source." />
-    <title>Scientific Calculator</title>
+    <Seo
+      title="Scientific Calculator"
+      description="Scientific Calculator: natural textbook display for Android. Free and open source."
+      canonical={new URL('/', Astro.site)}
+      siteName="Scientific Calculator"
+    />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
