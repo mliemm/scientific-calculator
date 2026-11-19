@@ -7,7 +7,7 @@ kotlin {
     jvmToolchain(21)
 }
 
-// scripts/release.js passes the unix time of the build; 0 marks a local build that skips update checks.
+// scripts/release.ts passes the unix time of the build; 0 marks a local build that skips update checks.
 def buildNumber = (project.findProperty("buildNumber") ?: "0") as long
 
 android {
